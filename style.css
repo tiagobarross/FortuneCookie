@@ -45,6 +45,30 @@ main p{
   font-size: 1.5rem;
 }
 
+.content{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.reload{
+  max-width: 19rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white-color);
+  background: var(--orange-color);
+  border: none;
+  border-radius: .4rem;
+  padding: 1.6rem;
+  transition: 0.5s;
+}
+
+.reload:hover{
+  background-color: #c27100;
+  cursor: pointer;
+}
+
 .content, .content2{
   display: flex;
   flex-direction: column;
@@ -71,6 +95,18 @@ main p{
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .fortuneCookie:hover{
   cursor: pointer;
   animation: shake 0.5s;
@@ -86,6 +122,9 @@ main p{
 .message{
   background: var(--semi-white-color);
   box-shadow: .1rem .1rem .4rem;
+  padding: 1rem;
+  transition: 1s;
+  animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .message p{
@@ -93,7 +132,7 @@ main p{
   font-family: 'Dancing Script';
 }
 
-.content2 button{
+.btnAgain{
   max-width: 19rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
@@ -106,7 +145,7 @@ main p{
   transition: 0.5s;
 }
 
-.content2 button:hover{
+.btnAgain:hover{
   background-color: #c27100;
   cursor: pointer;
 }
