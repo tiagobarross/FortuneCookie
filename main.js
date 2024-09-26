@@ -45,7 +45,6 @@ function resetFortuneCookie() {
 
 function reloadPage() {
   location.reload()
-  alert("Recarregado!")
 }
 
 btnCookie.addEventListener("click", showRandomMessage);
