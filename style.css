@@ -95,7 +95,7 @@ main p{
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@keyframes myAnim {
+@keyframes fade{
 	0% {
 		opacity: 0;
 		transform: translateY(50px);
@@ -124,7 +124,7 @@ main p{
   box-shadow: .1rem .1rem .4rem;
   padding: 1rem;
   transition: 1s;
-  animation: myAnim 2s ease 0s 1 normal forwards;
+  animation: fade 2s ease 0s 1 normal forwards;
 }
 
 .message p{
